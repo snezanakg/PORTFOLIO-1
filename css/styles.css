@@ -19,39 +19,81 @@ body {
   --golden: #D4AF37;
 }
 
-/* Header & Profile */
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  color: var(--golden);
+  text-decoration: none;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: var(--golden);
+}
+
+/* Header / Hero Section */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 60px 20px;
+  background: url('../assets/images/portfolio_background.webp') no-repeat center/cover;
 }
 
-.profile {
+.hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.profile img {
-  width: 120px;
-  height: 120px;
+.hero img {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   border: 2px solid var(--golden);
   object-fit: cover;
 }
 
-.profile-info h1 {
+.hero-info h1 {
   font-size: 2.5rem;
   color: var(--golden);
 }
 
-.profile-info p {
+.hero-info p {
   font-size: 1.2rem;
   color: #ccc;
 }
 
-.profile-info .linkedin {
+.linkedin {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -61,14 +103,14 @@ header {
   transition: background 0.3s ease;
 }
 
-.profile-info .linkedin:hover {
+.linkedin:hover {
   background: #b8902f;
 }
 
 /* About Me Section */
 .about-me {
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 40px auto;
   text-align: center;
 }
 
@@ -86,11 +128,12 @@ header {
 
 /* Portfolio Section */
 .portfolio-container {
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .portfolio-container h2 {
-  text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--golden);
@@ -160,7 +203,7 @@ header {
 /* Contact Section */
 .contact {
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 40px auto;
   text-align: center;
 }
 
@@ -183,7 +226,7 @@ header {
 .contact ul li a {
   color: var(--golden);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .contact ul li a:hover {
@@ -194,6 +237,7 @@ header {
 footer {
   text-align: center;
   margin-top: 20px;
+  padding: 10px 0;
   font-size: 0.9rem;
   color: #666;
 }

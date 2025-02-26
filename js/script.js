@@ -1,4 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Portfolio loaded in dark mode.');
-  });
-  
+  console.log('Portfolio loaded in dark mode with golden accents.');
+});

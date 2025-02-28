@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Portfolio loaded in dark mode with golden accents.');
+  console.log('Portfolio loaded in beige-bubble sidebar layout.');
 });

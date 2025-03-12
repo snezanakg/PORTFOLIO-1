@@ -217,22 +217,25 @@ body {
 /* Updated Button Layout for Project Links */
 .project-links {
   display: flex;
-  justify-content: center; 
-  gap: 12px; /* Increased spacing between buttons */
-  flex-wrap: nowrap; /* Keep buttons on one row */
+  justify-content: center;
+  gap: 8px;           /* Slightly reduced gap */
+  flex-wrap: nowrap;  /* Keep buttons in one row */
   margin-bottom: 15px;
 }
 
 .project-links a {
   text-decoration: none;
-  font-size: 0.8rem;  /* Smaller font size for better fit */
+  font-size: 0.75rem; /* Reduced font size */
   background-color: #b8a08f;
   color: #fff;
-  padding: 6px 12px;
+  padding: 5px 8px;   /* Adjusted padding */
   border-radius: 4px;
   transition: background 0.3s ease;
-  white-space: nowrap; /* Prevent text wrap */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .project-links a:hover {
   background-color: #9b897c;
 }
